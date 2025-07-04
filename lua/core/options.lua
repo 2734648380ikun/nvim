@@ -1,5 +1,7 @@
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
+
+
 -- enable mouse support vim.opt.mouse = "a"
 
 -- Tab
@@ -30,7 +32,7 @@ vim.opt.smartcase = true
 vim.opt.laststatus = 3
 
 -- avoid text wrapping
--- vim.opt.wrap = false
+vim.opt.wrap = false
 
 -- termguicolors
 vim.opt.termguicolors = true
@@ -48,3 +50,4 @@ vim.opt.cmdheight = 0
 vim.opt.clipboard = "unnamedplus"
 
 vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1

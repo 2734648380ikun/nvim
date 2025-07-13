@@ -2,6 +2,7 @@ vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
 
 
+
 -- enable mouse support vim.opt.mouse = "a"
 
 -- Tab

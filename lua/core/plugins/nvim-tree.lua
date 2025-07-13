@@ -6,6 +6,11 @@ return {
 		"nvim-tree/nvim-web-devicons",
 	},
 	opts = {
+		-- 关闭文件系统监视器，避免递归监听
+		filesystem_watchers = { enable = false },
+		-- 禁止切换缓冲区时自动重载
+		reload_on_bufenter = false,
+		git = { enable = false },
 		sort = {
 			sorter = "case_sensitive",
 		},

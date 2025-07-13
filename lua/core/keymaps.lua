@@ -81,7 +81,7 @@ keymap("n", "<Leader>-", ":vertical resize -5<CR>", { silent = true })
 -- keymap("n", "<C-S>", "<esc>:w<CR>")
 
 keymap("n", "<m-h>", ":tabprev<CR>", { silent = true })
-keymap("n", "<m-l>", ":tabNext<CR>", { silent = true })
+keymap("n", "<m-l>", ":tabnext<CR>", { silent = true })
 
 keymap("n", "<m-1>", ":tabn 1<CR>", { silent = true })
 keymap("n", "<m-2>", ":tabn 2<CR>", { silent = true })

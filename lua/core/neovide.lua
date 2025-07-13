@@ -1,6 +1,7 @@
 if vim.g.neovide then
 	--put thing
 	-- vim.g.neovide_fullscreen = true
+
 	vim.g.neovide_cursor_antialiasing = true
 
 	vim.g.neovide_cursor_vfx_mode = "pixiedust"
@@ -24,5 +25,7 @@ if vim.g.neovide then
 		vim.g.neovide_floating_z_height = 10
 		vim.g.neovide_light_angle_degrees = 45
 		vim.g.neovide_light_radius = 5
+	else
+		vim.g.neovide_fullscreen = true;
 	end
 end

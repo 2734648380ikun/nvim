@@ -11,8 +11,8 @@ vim.keymap.set("n", "<leader>fo", ":Telescope oldfiles<CR>", { desc = "open the 
 
 vim.keymap.set("n", "<leader>ft", ":Telescope filetypes<CR>", { desc = "set file type", silent = true })
 
-vim.keymap.set("n", "<leader>ai", ":Telescope codecompanion<CR>",
-	{ desc = "open the ai code companion", silent = true })
+-- vim.keymap.set("n", "<leader>ai", ":Telescope codecompanion<CR>",
+-- 	{ desc = "open the ai code companion", silent = true })
 -- keymaps
 vim.keymap.set("n", "<Leader>ff", "<Cmd>Telescope find_files<CR>", { desc = "Find file", silent = true })
 vim.keymap.set("n", "<Leader>fg", "<Cmd>Telescope live_grep<CR>", { desc = "Find grep", silent = true })

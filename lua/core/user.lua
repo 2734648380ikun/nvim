@@ -1,6 +1,5 @@
 -- 这里主要是来写自己定义的一些自动函数
 local notify = require("notify")
-local _folding_range = require("vim.lsp._folding_range")
 vim.api.nvim_create_autocmd("RecordingEnter", {
 	callback = function()
 		StartRecordingMacro()

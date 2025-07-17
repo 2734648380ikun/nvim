@@ -151,6 +151,26 @@ lsa("cs", {
 			i(1, "node"),
 		})
 	),
+	s(
+		"summary",
+		fmt("///<summary>\n///{1}\n///</summary>", {
+			i(1, "desc"),
+		})
+	),
+	s(
+		"param",
+		fmt('<param name = "{1}">{2}</param>', {
+			i(1, "var"),
+			i(2, "desc"),
+		})
+	),
+
+	s(
+		"returns",
+		fmt('<returns>{1}</returns>', {
+			i(1, "desc"),
+		})
+	),
 
 	postfix(".valid", {
 		f(function(_, parent)

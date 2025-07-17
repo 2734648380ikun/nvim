@@ -17,11 +17,11 @@ local function base16colors()
 end
 
 return {
-	"echasnovski/mini.base16",
-	version = false,
-	priority = 1000,
-	config = function()
-		base16colors()
-		vim.api.nvim_create_user_command("Base16Colors", base16colors, {})
-	end,
+	-- "echasnovski/mini.base16",
+	-- version = false,
+	-- priority = 1000,
+	-- config = function()
+	-- 	base16colors()
+	-- 	vim.api.nvim_create_user_command("Base16Colors", base16colors, {})
+	-- end,
 }

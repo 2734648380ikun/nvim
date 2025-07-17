@@ -6,12 +6,18 @@ return {
 	},
 	opts = {
 
+		-- 关闭文件系统监视器，避免递归监听
+		filesystem_watchers = { enable = false },
+		-- 禁止切换缓冲区时自动重载
+		reload_on_bufenter = false,
+
 		-- check :h nvim-tree-setup
 		disable_netrw = true,
 		hijack_netrw = true,
 		diagnostics = {
-			enable = true,
+			enable = false,
 		},
+
 		update_focused_file = {
 			enable = true,
 		},
@@ -20,9 +26,9 @@ return {
 			preserve_window_proportions = false,
 		},
 		modified = {
-			enable = true,
-			show_on_dirs = true,
-			show_on_open_dirs = true,
+			enable = false,
+			show_on_dirs = false,
+			show_on_open_dirs = false,
 		},
 		log = {
 			enable = true,

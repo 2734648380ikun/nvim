@@ -14,12 +14,12 @@ return {
 			debounce = 75,
 			trigger_on_accept = true,
 			keymap = {
-				accept = "<M-l>",
+				accept = "<M-e>",
 				accept_word = false,
 				accept_line = false,
 				next = "<M-]>",
 				prev = "<M-[>",
-				dismiss = "<C-]>",
+				dismiss = "<M-d>",
 			},
 
 		},

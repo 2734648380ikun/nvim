@@ -12,7 +12,8 @@ return {
 		-- curl https://api.mason-registry.dev/
 		"williamboman/mason.nvim",
 		config = function()
-			require("mason").setup()
+			require("mason").setup({
+			})
 		end,
 	},
 	{

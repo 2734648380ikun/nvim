@@ -1,11 +1,13 @@
 return {
-	-- Lazy
-	"olimorris/onedarkpro.nvim",
-	priority = 1000, -- Ensure it loads first_lin
-	config = function()
-		-- somewhere in your config:
-		vim.cmd("colorscheme onedark")
-	end
+	{
+		-- Lazy
+		"olimorris/onedarkpro.nvim",
+		priority = 1000, -- Ensure it loads first_lin
+		config = function()
+			-- somewhere in your config:
+			vim.cmd("colorscheme onedark")
+		end
+	},
 
 	-- 	"scottmckendry/cyberdream.nvim",
 	-- 	lazy = false,

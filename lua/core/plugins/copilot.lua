@@ -5,6 +5,7 @@ return {
 	config = function()
 		require("copilot").setup {
 			filetypes = {
+				cs = true,
 				["*"] = false, -- disable for all other filetypes and ignore default `filetypes`
 			},
 			suggestion = {

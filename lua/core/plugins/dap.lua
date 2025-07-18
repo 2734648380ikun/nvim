@@ -147,7 +147,7 @@ return {
 			end
 
 			-- Path to the Godot executable
-			local godot_executable = '/usr/lib/godot-mono/godot.linuxbsd.editor.x86_64.mono'
+			local godot_executable = 'C:/Users/27346/Documents/Godot_v4.3-stable_mono_win64/Godot_v4.3-stable_mono_win64/Godot_v4.3-stable_mono_win64.exe'
 
 			-- Get important environment variables
 			local function get_env_vars()
@@ -206,7 +206,7 @@ return {
 			-- Direct launch approach using netcoredbg to start Godot-Mono
 			dap.adapters.coreclr = {
 				type = 'executable',
-				command = '/home/jamie/.local/share/nvim/mason/bin/netcoredbg',
+				command = "C:/Users/27346/scoop/apps/NetCoreDbg/current/netcoredbg.exe",
 				args = {
 					'--interpreter=vscode',
 					'--',

@@ -63,9 +63,11 @@ return {
 				},
 				window = {
 					completion = cmp.config.window.bordered({
-
+						winhighlight = 'Normal:Normal,FloatBorder:None,CursorLine:Visual,Search:None'
 					}),
-					documentation = cmp.config.window.bordered(),
+					documentation = cmp.config.window.bordered({
+						winhighlight = 'Normal:Normal,FloatBorder:None,CursorLine:Visual,Search:None'
+					}),
 				},
 				formatting = {
 					format = function(entry, vim_item)

@@ -22,7 +22,7 @@ return {
 			enable = true,
 		},
 		view = {
-			width = 30,
+			width = 20,
 			preserve_window_proportions = false,
 		},
 		modified = {
@@ -67,7 +67,7 @@ return {
 		},
 		actions = {
 			open_file = {
-				resize_window = false,
+				resize_window = true,
 			},
 		},
 	},

@@ -68,18 +68,6 @@ keymap("n", "<C-Right>", ":winc l<CR>", { silent = true })
 keymap("n", "<Leader>+", ":vertical resize +5<CR>", { silent = true })
 keymap("n", "<Leader>-", ":vertical resize -5<CR>", { silent = true })
 
--- Select all
--- keymap("n", "<C-Z>", "u", { desc = "Undo" })
-
--- keymap("i", "<C-Z>", "<esc>ua", { desc = "Undo" })
-
--- keymap("n", "<C-Y>", "<C-R>", { desc = "Restore" })
-
--- keymap("i", "<C-V>", "<C-R>*")
-
--- keymap("i", "<C-S>", "<esc>:w<CR>a")
--- keymap("n", "<C-S>", "<esc>:w<CR>")
-
 keymap("n", "<m-h>", ":tabprev<CR>", { silent = true })
 keymap("n", "<m-l>", ":tabnext<CR>", { silent = true })
 
@@ -100,20 +88,8 @@ keymap("n", "<m-0>", ":tabn 10<CR>", { silent = true })
 keymap("n", "<Leader>gvi", ":e $VIMRC<CR>", { desc = "Edit vimrc", silent = true, })
 
 keymap("n", "<C-W>t", ":tabnew<CR>", { desc = "Create new tab window", silent = true, })
--- keymap("n", "<Leader>o", ":%so<CR>", { desc = "source current file to neovim" })
---
---
 keymap("n", "[n", ":cn<CR>", { desc = "jump to next error after make", silent = true, })
 keymap("n", "]n", ":cp<CR>", { desc = "jump to previous error after make", silent = true, })
 
 keymap("n", "<esc><esc>", "<Cmd>winc q<CR>", { desc = "close cur window,same as winc q", silent = true });
 
-
-
---copilot
--- keymap("i", "<m-f>", 'copilot#Accept("\\<CR>")', {
--- 	expr = true,
--- 	replace_keycodes = false,
--- })
-
--- vim.g.copilot_no_tab_map = true

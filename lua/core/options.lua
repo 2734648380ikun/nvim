@@ -14,6 +14,7 @@ vim.opt.number = true
 -- cursor line
 vim.opt.cursorline = false
 
+
 -- splits
 vim.opt.splitbelow = true
 vim.opt.splitright = true
@@ -39,8 +40,8 @@ vim.opt.termguicolors = true
 -- timeout
 vim.opt.timeoutlen = 300
 
--- cursorline
-vim.opt.cursorline = true
+-- -- cursorline
+-- vim.opt.cursorline = true
 
 -- cmd line
 vim.opt.cmdheight = 0

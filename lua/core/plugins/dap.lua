@@ -147,6 +147,8 @@ return {
 			end
 
 			-- Path to the Godot executable
+			local godot_executable =
+			'C:/Users/27346/Documents/Godot_v4.3-stable_mono_win64/Godot_v4.3-stable_mono_win64/Godot_v4.3-stable_mono_win64.exe'
 
 			-- Get important environment variables
 			local function get_env_vars()

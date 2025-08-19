@@ -1,4 +1,3 @@
 -- lazy.nvim
 return {
-
 }

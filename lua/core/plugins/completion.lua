@@ -80,6 +80,7 @@ return {
 							luasnip = "[LuaSnip]",
 							nvim_lua = "[Nvim_Lua]",
 							latex_symbols = "[LaTeX]",
+							render_markdown = "[Markdown]"
 						})[entry.source.name]
 						return vim_item
 					end,
@@ -163,7 +164,6 @@ return {
 					{
 						name = "nvim_lua",
 					},
-
 					--来自nvim-path
 					{ name = "path" },
 					-- { name = "codeium" },

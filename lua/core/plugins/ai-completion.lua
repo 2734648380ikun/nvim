@@ -2,7 +2,7 @@ return
 {
 	-- "yetone/avante.nvim",
 	-- -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
-	-- -- ⚠️ must add this setting! ! !
+	-----⚠️must add this setting! ! !
 	-- build = function()
 	-- 	-- conditionally use the correct build system for the current OS
 	-- 	if vim.fn.has("win32") == 1 then

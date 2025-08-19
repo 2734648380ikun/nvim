@@ -13,8 +13,8 @@ return {
 		"williamboman/mason.nvim",
 		config = function()
 			require("mason").setup({
-				ui={
-					border="rounded"
+				ui = {
+					border = "rounded"
 				}
 			})
 		end,
@@ -38,11 +38,29 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
 			-- servers setup
+			-- vim.lsp.buf.hover({
+			-- 	border = "none"
+			-- })
 			for _, server in ipairs(servers) do
 				lspconfig[server].setup({
 					capabilities = capabilities,
 				})
 			end
+
+			--keymap
+			vim.keymap.set("n", "K", function()
+				vim.lsp.buf.hover({
+					border = "rounded"
+				})
+			end, {
+			})
+			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {
+				-- buffer = true
+			})
+			vim.keymap.set("n", "gD", vim.diagnostic.open_float, {})
+			vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
+			vim.keymap.set("n", "gR", vim.lsp.buf.rename, {})
+			vim.keymap.set("n", "gca", vim.lsp.buf.code_action, {})
 		end,
 	},
 }

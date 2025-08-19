@@ -21,8 +21,6 @@ function StopRecordingMacro()
 	notify.dismiss({ silent = true, pending = true })
 end
 
----
-
 
 
 --CodeCompanionHooks

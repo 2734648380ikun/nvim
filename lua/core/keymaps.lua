@@ -33,12 +33,6 @@ vim.keymap.set('n', '<leader>fa', ':Ag<CR>', { silent = true, desc = "Using ag" 
 
 
 --- lsp
-vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-vim.keymap.set("n", "gD", vim.diagnostic.open_float, {})
-vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
-vim.keymap.set("n", "gR", vim.lsp.buf.rename, {})
-vim.keymap.set("n", "gca", vim.lsp.buf.code_action, {})
 -- C-x-o for autocomplete suggestion
 ----------------
 
@@ -92,4 +86,3 @@ keymap("n", "[n", ":cn<CR>", { desc = "jump to next error after make", silent = 
 keymap("n", "]n", ":cp<CR>", { desc = "jump to previous error after make", silent = true, })
 
 keymap("n", "<esc><esc>", "<Cmd>winc q<CR>", { desc = "close cur window,same as winc q", silent = true });
-

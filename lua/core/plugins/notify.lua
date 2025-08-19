@@ -7,7 +7,7 @@ return {
 			-- 覆盖 vim.notify
 			vim.notify = notify
 
-			notify.setup({
+			local opts = {
 				timeout = 1000,
 				width = 40,
 				height = 5,
@@ -19,7 +19,8 @@ return {
 				fps = 5,
 				notify_render = "minimal",
 				opacity = 50,
-			})
+			}
+			notify.setup(opts)
 		end,
 	},
 	-- {

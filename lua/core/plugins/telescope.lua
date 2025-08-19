@@ -6,8 +6,6 @@ return {
 	opts = {
 		defaults = {
 			mappings = {
-				-- i = {
-				-- }
 				n = {
 					["<Esc><Esc>"] = "close",
 					["<Esc>"] = false,
@@ -16,14 +14,17 @@ return {
 		},
 		pickers = {
 			find_files = {
-				theme = "dropdown",
+				theme = "dropdown"
 			},
 			live_grep = {
 				theme = "dropdown"
 			}
-		}
+		},
 
 	},
 	-- config = function()
-	-- end,
+	-- 	local ts = require("telescope")
+	-- 	require("telescope").setup {
+	-- 	}
+	-- end
 }

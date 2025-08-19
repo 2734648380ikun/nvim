@@ -56,6 +56,9 @@ return {
 
 				vim.api.nvim_set_hl(0, "ColorColumn", {
 					bg = "NONE",
+					-- fg = "NONE",
+					-- ctermbg = "NONE",
+					-- ctermfg = "NONE"
 				})
 
 				vim.api.nvim_set_hl(0, "FloatBorder", {
@@ -68,6 +71,7 @@ return {
 			end
 
 			vim.cmd.colorscheme("gruvbox-material")
+
 			set_hl()
 
 			vim.api.nvim_create_autocmd("ColorScheme", { callback = set_hl })

@@ -1,8 +1,14 @@
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
 
--- enable mouse support vim.opt.mouse = "a"
 
+-- win
+--
+-- vim.o.winborder = "rounded"
+
+
+-- enable mouse support
+vim.o.mouse = "v"
 -- Tab
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4

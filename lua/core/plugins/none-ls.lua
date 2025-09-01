@@ -12,6 +12,5 @@ return {
 			-- },
 		})
 
-		vim.keymap.set("n", "<leader>p", vim.lsp.buf.format, { desc = "Prettify code" })
 	end,
 }

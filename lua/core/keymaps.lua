@@ -2,36 +2,6 @@ local keymap = vim.keymap.set
 
 -- Leader key (space bar)
 vim.g.mapleader = " "
-
---telescope
---
-vim.keymap.set("n", "<Leader>n", ":Telescope notify<CR>", { desc = "open the notification page", silent = true, })
-
-vim.keymap.set("n", "<leader>fo", ":Telescope oldfiles<CR>", { desc = "open the old files", silent = true, })
-
-vim.keymap.set("n", "<leader>ft", ":Telescope filetypes<CR>", { desc = "set file type", silent = true })
-
--- vim.keymap.set("n", "<leader>ai", ":Telescope codecompanion<CR>",
--- 	{ desc = "open the ai code companion", silent = true })
--- keymaps
-
-vim.keymap.set("n", "<Leader>ff", "<Cmd>Telescope find_files<CR>", { desc = "Find file", silent = true })
-vim.keymap.set("n", "<Leader>fg", "<Cmd>Telescope live_grep<CR>", { desc = "Find grep", silent = true })
-
--- vim.keymap.set("n", "<Leader>gr", builtin.lsp_references, { desc = "Get references" })
-
---- NvimTree
-vim.keymap.set("n", "<Leader>e", ":NvimTreeToggle<CR>", { desc = "Explorer", silent = true })
-
-
---- fzf
-
-vim.keymap.set('n', '<leader>fF', ':Files<CR>', { silent = true, desc = "Using FzF" })
-vim.keymap.set('n', '<leader>fR', ':RG<CR>', { silent = true, desc = "Using RG" })
-vim.keymap.set('n', '<leader>fr', ':Rg<CR>', { silent = true, desc = "Using Rg" })
-vim.keymap.set('n', '<leader>fa', ':Ag<CR>', { silent = true, desc = "Using ag" })
-
-
 --- lsp
 -- C-x-o for autocomplete suggestion
 ----------------
@@ -79,7 +49,6 @@ keymap("n", "<m-0>", ":tabn 10<CR>", { silent = true })
 -- keymap("i", "<C-CR>", "<esc>A;<CR>")
 
 
-keymap("n", "<Leader>gvi", ":e $VIMRC<CR>", { desc = "Edit vimrc", silent = true, })
 
 keymap("n", "<C-W>t", ":tabnew<CR>", { desc = "Create new tab window", silent = true, })
 keymap("n", "[n", ":cn<CR>", { desc = "jump to next error after make", silent = true, })

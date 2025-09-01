@@ -1,10 +1,5 @@
 return {
 	{
-		-- Lazy
-		"olimorris/onedarkpro.nvim",
-		lazy = false,
-	},
-	{
 		'sainnhe/gruvbox-material',
 		lazy = false,
 		priority = 1000,
@@ -39,7 +34,6 @@ return {
 					bg = "NONE",
 				})
 
-				-- 可视模式：透明背景 + 反色
 				vim.api.nvim_set_hl(0, "Visual", {
 					bg = "NONE",
 					italic = true,
@@ -56,11 +50,7 @@ return {
 
 				vim.api.nvim_set_hl(0, "ColorColumn", {
 					bg = "NONE",
-					-- fg = "NONE",
-					-- ctermbg = "NONE",
-					-- ctermfg = "NONE"
 				})
-
 				vim.api.nvim_set_hl(0, "FloatBorder", {
 					bg = "NONE",
 				})
@@ -68,12 +58,39 @@ return {
 				vim.api.nvim_set_hl(0, "FloatTitle", {
 					bg = "NONE",
 				})
+
+				vim.api.nvim_set_hl(0, "TabLine", {
+					bg = "NONE",
+					fg = "grey",
+					-- underline = true
+				})
+				vim.api.nvim_set_hl(0, "TabLineSel", {
+					bg = "NONE",
+					fg = "Orange",
+					-- underdashed = true,
+				})
+				vim.api.nvim_set_hl(0, "Pmenu", {
+					bg = "NONE",
+					-- underdashed = true,
+				})
+				vim.api.nvim_set_hl(0, "PmenuSel", {
+					bg = "NONE",
+					italic = true,
+					underline = true,
+					bold = true,
+				})
+				vim.api.nvim_set_hl(0, "PmenuExtra", {
+					bg = "NONE",
+					-- underdashed = true,
+				})
+				vim.api.nvim_set_hl(0, "PmenuKind", {
+					bg = "NONE",
+					-- underdashed = true,
+				})
 			end
 
 			vim.cmd.colorscheme("gruvbox-material")
-
 			set_hl()
-
 			vim.api.nvim_create_autocmd("ColorScheme", { callback = set_hl })
 			--
 		end
